@@ -18,29 +18,30 @@
    <!-- shap card container -->
    <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
     <!-- triangle card -->
-   <div class="flex-1 grid">
-    <div class="card card-compact w-96 bg-base-100 shadow-xl">
-     <figure><img src="images/triangle.png" alt="Shoes" /></figure>
-     <div class="card-body">
-       <h2 class="card-title">Triangle</h2>
-       <p class="text-center text-3xl">Area = 0.5 x b x h</p>
-      </div>
-     <div>
-      <input id="triangle-base" class="w-24 text-2xl p-2 rounded-sm" type="text" placeholder="b">
-      <span class="mr-4 ml-2">cm</span>
-      <input id="triangle-height" class="w-24 text-2xl p-2 rounded-sm" type="text" name="" placeholder="h">
-      <span>cm</span>
-     </div>
-     <div>
-     <p class="text-2xl">Area:<span id="triangle-area"></span>
-     <span>cm<sup>2</sup></span></p>
-     </div>
-       <div class="card-actions">
-         <button onclick="calculateTriangleArea()"  class="btn btn-primary w-full">Calculete</button>
+    <div>
+      <div class="card w-96 bg-base-100 shadow-xl">
+       <figure><img src="images/rectangle.png" alt="Shoes" /></figure>
+       <div class="card-body">
+         <h2 class="card-title">Triangle!</h2>
+         <p class="text-2xl">Area = 0.5 x b x h</p>
+         <div>
+          <!-- Traiangle base-->
+          <input type="text" name="" id="triangle-base" class="w-24 text-2xl p-2 rounded-sm" placeholder="base">
+          <span class="mr-4 ml-2">cm</span>
+          <!--Traiangle height-->
+          <input type="text" name="" id="triangle-height" class="w-24 text-2xl p-2 rounded-sm" placeholder="height">
+          <span>cm</span>
+         </div>
+         <div>
+          <p class="text-2xl">Area:<span id="triangle-area"></span>
+          <span>cm<sup>2</sup></span></p>
+          </div>
+         <div class="card-actions justify-end">
+           <button onclick="calculateTriangleArea()" class="btn btn-primary w-full">Calculete</button>
+         </div>
        </div>
      </div>
-   </div>
-   </div>
+     </div>
 
 
 
@@ -103,6 +104,7 @@
     <h3 class="text-3xl text-center p-4">Area calculation</h3>
    </div>
   </div>
+</div>
  </main>
  <script src="script/triangle.js"></script>
  <script src="script/rectangle.js"></script>
